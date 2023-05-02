@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />   
+<link rel="stylesheet" href="style.css">
+      <title>Document</title>
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
+
+
+    <header class="container-fluid sticky-top">
+<div class="">
+<div class="row blues p-2 vh-60">
+   <div class="col">
+     <div class="d-flex justify-content-between">      
+        <div class="logo p-2 m-6">
+            <img  class="logo box-shade sticky-top" src="data:image/jpeg;base64,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" alt="">
+        </div>
+        <div class="head-top monkey-font p-3 m-3 box-shade text-center bg-dark">
+            <p class="m-2 text-light"><em>MONKEYS DOING MONKEY STUFFS</em> </p>
+        </div>     
+   </div>  
+</div>
+</div>
+</div>
+    </header>
+
+
+    <main class="container-fluid blues">
+
+
+
+        <section class=" row hero-image justify-content-md-end image-fluid gorrila">
+          <div class="">
+                <div class="d-flex">
+                <div class="text-light text-center">
+                  <div class="">
+                    <div class="glasscard p-3 m-5">
+                        <h1 class="box-shade bg-dark text-light monkey-font">
+                            Monkeys
+                        </h1>
+                        <P>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium est vel molestiae, placeat corporis accusamus ut nihil atque laborum velit eaque officiis excepturi quibusdam quisquam ea dicta tempore amet maiores.
+                        </P>
+                    </div>
+                  </div>
+                </div>
+                <div class="card box box-shade bg-info d-none d-lg-block p-2 m-2">
+<h3 class="monkey-font box-shade text center p-3 m-2">monkey monkey monkey</h1>
+<p class="text-center p-3 m-2">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ullam est nihil? Quos quod cum molestiae perspiciatis ad explicabo quae exercitationem, rerum facere impedit! Quos, accusantium vel. Sit, quasi cumque.
+</p>
+                </div>       
+                </div>  
+            </div> 
+            
+       
+ </section>
+
+ <section class="row align-items-center justify-content-evenly blues">
+ 
+    <div class="col-md-5 col-10 p-1 m-1">
+        <div class="">
+        <div class="card box-shade text-center rounded bg-dark">
+            <div class="card-header monkey-card">
+              <h1 class="monkey-font btn-clr">Monkeys</h1>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title text-light monkey-font">Monkey Buisness</h3>
+              <p class="card-text text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem vel accusamus tenetur fuga!</p>
+              <a href="#" class="btn btn-clr monkey-font">Go Bananas!</a>
+            </div>
+            <div class="card-footer text-muted monkey-card">
+            
+            </div>
+        </div>
+    </div>   
+</div>
+<div class="col-md-5 col-10 p-3 m-1">
+    <div class="card text-center box-shade rounded bg-dark">
+        <div class="card-header monkey-card">
+          <h1 class="monkey-font btn-clr">gorrila</h1>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title text-light monkey-font">also chimps</h3>
+          <p class="card-text text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem vel accusamus tenetur fuga!</p>
+          <a href="#" class="btn monkey-font btn-clr">Go Ape!</a>
+        </div>
+        <div class="card-footer monkey-card">
+        
+        </div>
+    </div>   
+</div>
+
+ 
+</section>
+
+
+
+</section>
+
+<section class="row blues">
+    <div class="col d-flex flex-wrap justify-content-evenly align-items-center">
+    <div class="p-4 m-3">
+    <img class="box-shade" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ79RYHRh6EO9Ge01omOu0x71S5OvgblBCMkA&usqp=CAU" alt="">
+</div>
+<div class="d-flex">
+<div class="p-2">
+<h1 class="text-dark text-center btn-clr monkey-font">extra words</h1>
+<p class="text-light text-center box-shade bg-dark m-4">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sint sapiente illum optio corrupti, corporis recusandae necessitatibus doloribus natus distinctio nemo cupiditate deserunt sit animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, in atque reiciendis explicabo sunt modi, suscipit vero perspiciatis, commodi voluptatem placeat maiores. Nostrum modi earum totam quod fugiat porro doloremque!
+</p>
+</div>
+</div>
+    </div>
+</section>
+
+<section class="row blues">
+    <div class="col m-4 d-flex flex-wrap justify-content-evenly align-items-center">
+    <div class="order-1 col-md-order-3 card p-4 m-3 box-shade rounded bg-warning" style="width: 18rem;">
+        
+        <img class="box-shade" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgyuvUFmSScGyWz-No3zB4H9hX191oGG5IyQ&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing el vero atque obcaecati veritatis unde totam fuga neque?</p>
+        </div>
+      </div>
+
+      <div class="order-2 col-md-order-2 card m-3 p-4 box-shade rounded bg-warning" style="width: 18rem;">
+        <img class="box-shade" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxnStFcx0hQTQXMonlgC5Wu68u9OCXUeMCDQ&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quo beata.</p>
+        </div>
+      </div>
+
+      <div class="order-3 col-md-order-1 card m-3 p-4 box-shade rounded bg-warning" style="width: 18rem;">
+        <img class="box-shade " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0JE8GivKOXZv9lE9tLVeTUNbyhp3m2MvCMQ&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur, at nobis.</p>
+        </div>
+      </div>
+    </div>
+
+    
+</section>
+
+<section>
+
+  <div class="row blues justify-content-evenly align-items-center">
+    <div class="col-md-4 order-1 order-md-3"><img class="bg-dark box-shade p-2 m-2" src="weird.monkeys.jpeg" alt=""></div>
+    <div class="col-md-4 order-2 order-md-1"><img class="bg-dark p-2 m-2 box-shade" src="monkeygu.png" alt=""></div>
+    <div class="col-md-4 order-3 order-md-2"><img class="bg-dark p-2 m-2 box-shade" src="monkeys.png" alt=""></div>
+  </div>
+  
+
+</section>
+
+<section class="row bg-head">
+    <div class="col">
+    <div class="text-center">
+        <h1 class="box-shade bg-secondary font-weight-bold monkey-font text-light m-3">
+            MONKEYS! MONKEYS! MONKEYS! MONKEYS!
+        </h1>
+        
+<P class="monkey-font">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit porro corrupti aut beatae tempore esse repellendus, fugit, nobis autem velit obcaecati eius officia veniam, molestias accusamus? Molestiae, voluptatum eligendi?
+</P>
+
+    </div>
+</div>  
+</section>
+
+
+    </main>
+
+    <footer class="row monkey-card">
+        <div class="col-12">
+<h1 class="text-center monkey-font text-light"> MONKEY STUFF</h1>
+        </div>
+    </footer>
+</body>
+</html>

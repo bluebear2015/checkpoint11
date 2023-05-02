@@ -1,0 +1,84 @@
+.bg-bl {
+    color: rgba(208, 112, 11, 0.7);
+}
+.btn-clr
+{
+    border: 2px solid #18063c;
+    box-shadow: 5px 5px 6px rgb(153, 161, 116);
+    border-radius: 15px; 
+    background-color: #ebdd24;   
+}
+
+.bg-bg {
+    background-color: #227101;
+}
+
+
+.monkey-card {
+background-color:  #7b31bb;
+
+}
+
+.bg-head {
+    background-color:#ee3899b9 ;
+}
+
+.blues{
+    background-color: #6ae3b3cb;
+}
+
+.monkey-font {
+    font-family: 'Bruno Ace', cursive;
+}
+.gorrila {
+    border: 2px;
+    border-color: #18063c;
+}
+
+ .logo {
+    max-width: 70%;
+    max-height: 60%;
+    padding: 5;
+ }
+
+ .box-shade {
+    border: 2px solid #18063c;
+box-shadow: 10px 10px 6px rgb(53, 55, 51);
+border-radius: 30px;
+
+ }
+
+ .display
+ {
+ @media screen (max-width: 600px) 
+ 
+ display: none;   
+    
+ }
+
+
+
+.glasscard {
+    /* From https://css.glass */
+background: rgba(16, 153, 145, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.8px);
+-webkit-backdrop-filter: blur(5.8px);
+border: 1px solid rgba(16, 153, 145, 1);
+float: end;
+
+}
+
+
+.hero-image {
+    
+        background-image: url(gorilla.png);
+        min-height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;      
+} 
+.flex-direction{
+    flex-direction: row;
+}
